@@ -21,6 +21,9 @@ public class CustomerMenu {
         System.out.println("Enter Password");
         String password = scanner.next();
 
+        int cos;
+        int cos= scanner.nextInt();
+
         Customer customer = new Customer();
         customer.setId(id);
         customer.setFirstName(firstName);

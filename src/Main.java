@@ -11,16 +11,18 @@ public class Main {
         System.out.println("1.Signup");
         System.out.println("Enter Your Choice");
         int choice = scanner.nextInt();
-        switch (choice){
+        switch (choice) {
             case 1:
                 CustomerMenu customerMenu = new CustomerMenu();
                 Customer customer = customerMenu.inputCustomerSignupData();
+
+
                 CustomerController customerController = new CustomerController();
-              Customer newCustomer = customerController.handleSignup(customer);
+                Customer newCustomer = customerController.handleSignup(customer);
+
                 CustomerService customerService = new CustomerService();
                 customerService.displayCustomerInfo(newCustomer);
-
-
+                break;
         }
 
 
